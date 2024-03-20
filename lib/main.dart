@@ -5,6 +5,6 @@ import 'package:signup/welcome.dart';
 
 void main() {
   runApp( MaterialApp(
-    home: SignApp(),
+    home: welcome(),
   ));
 }

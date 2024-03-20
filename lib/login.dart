@@ -45,8 +45,9 @@ class _SignAppState extends State<Login> {
                     labelText: 'enter your password',),
                 ),
               ),
-              ElevatedButton(onPressed: (){
-                ();
+              ElevatedButton(onPressed: (){  Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Login()));
+
 
               },
                   child:Text('LOGIN',),

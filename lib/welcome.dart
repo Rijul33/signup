@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signup/registration.dart';
 
 import 'login.dart';
 
@@ -39,7 +40,10 @@ class _welcomeState extends State<welcome> {
               Container(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Login()));
+                    },
                     child: Text(
                       'Login',
                       style: TextStyle(
@@ -49,7 +53,10 @@ class _welcomeState extends State<welcome> {
               SizedBox(width: 30),
               Container(
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => SignApp()));
+                    },
                     style:
                         ElevatedButton.styleFrom(backgroundColor: Colors.blue),
                     child: Text(

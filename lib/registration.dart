@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signup/login.dart';
 import 'package:signup/welcome.dart';
 
 class SignApp extends StatefulWidget {
@@ -89,7 +90,7 @@ class _SignAppState extends State<SignApp> {
                   TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => welcome()));
+                          MaterialPageRoute(builder: (context) => Login()));
                     },
                     child: Text('Login'),
                     style: TextButton.styleFrom(backgroundColor: Colors. white),
